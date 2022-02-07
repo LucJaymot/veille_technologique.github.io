@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veille Hasura</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+	<style>
+		.zoom {
+width: 320px;
+height: 240px;
+}
+.image {
+width: 100%;
+height: 100%;
+}
+.image img {
+/* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+-webkit-transition: all 1s ease; /* Safari et Chrome */
+-moz-transition: all 1s ease; /* Firefox */
+-ms-transition: all 1s ease; /* Internet Explorer 9 */
+-o-transition: all 1s ease; /* Opera */
+transition: all 1s ease;
+margin-left: auto;
+margin-right: auto;
+}
+.image:hover img {
+/* L'image est grossie de 25% */
+-webkit-transform:scale(1.150); /* Safari et Chrome */
+-moz-transform:scale(1.150); /* Firefox */
+-ms-transform:scale(1.150); /* Internet Explorer 9 */
+-o-transform:scale(1.150); /* Opera */
+transform:scale(1.150);
+}
+	</style>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header text-light">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+								<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero text-center text-light">
+				<div class="hero-bg"></div>
+				<div class="hero-particles-container">
+					<canvas id="hero-particles"></canvas>
+				</div>
+                <div class="container-sm">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">Veille technologique Hasura</h1>
+	                        <p class="hero-paragraph">Luc Jaymot DAWIN B</p>
+						</div>
+						<div class="mockup-container">	
+							<img class="device-mockup" src="dist/images/hasura.png" alt="image">
+						</div>
+                    </div>
+                </div>
+            </section>
+
+			<section class="features-extended section">
+                <div class="features-extended-inner section-inner">
+					<div class="features-extended-wrap">
+						<div class="container">
+							<center><h1>C'est quoi le GraphQL ?</h1></center>
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<!--<div class="mockup-bg">
+										<img src="dist/images/iphone-feature-bg-01.svg" alt="iPhone Feature 01 illustration">
+									</div>-->
+									<img class="device-mockup is-revealing" src="dist/images/graphql.png" alt="iPhone Feature 01">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<!--<h3 class="mt-0 mb-16">Amazing features, coming soon.</h3> -->
+									<p class="m-0">GraphQL est un langage de requête et un environnement d'exécution côté serveur pour les interfaces de programmation d'application (API) qui s'attache à fournir aux clients uniquement les données qu'ils ont demandées, et rien de plus.</p>
+								</div>
+							</div>
+							<!--<center><h1>Qu'est ce que Hasura ?</h1></center>
+							<div class="feature-extended">
+								
+							<center>Le moteur Hasura GraphQL est un serveur GraphQL ultra-rapide qui vous offre des API GraphQL instantanées et en temps réel sur des bases Postgres, MSSQL, Citus. Il est aussi possible de lier Hasura à Docker. 
+								
+							</center>
+							
+							
+								<br>
+								<br>
+								<div class="feature-extended-image">
+
+								<center>									
+									<img src="dist/images/schema_hasura.png"  alt="iPhone Feature 03">
+								</center>
+								</div>
+							</div>-->
+							<center><h1>Qu'est ce que Hasura ?</h1></center>
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<!--<div class="mockup-bg">
+										<img src="dist/images/iphone-feature-bg-01.svg" alt="iPhone Feature 01 illustration">
+									</div>-->
+									<img class="device-mockup" src="dist/images/postgre.png" alt="iPhone Feature 01">
+								</div>
+								<br>
+								<br>
+								<div class="feature-extended-body is-revealing">
+									<!--<h3 class="mt-0 mb-16">Amazing features, coming soon.</h3> -->
+									<p class="m-0">Selon la documentation officielle, Hasura est un moteur d'API GraphQL. Il rend les données instantanément accessibles via une API GraphQL en temps réel, ce qui permet de créer et de livrer des applications et des API modernes rapidement. Hasura se connecte aux bases de données, serveurs REST, serveurs GraphQL et API tierces pour fournir une API GraphQL unifiée sur toutes sources de données. Les tables de base de données Postgres sont implétées directement dans la structure et les relations des requêtes et mutations GraphQL sans écrire de code.
+									</p>
+								</div>
+							</div>
+
+							<center><h1>Qu'est ce que permet Hasura ?</h1></center>
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-bg">
+										<li><b>Fusionner des schémas distants : </b>accéder à des schémas GraphQL personnalisés</li>
+										<br>
+										<li><b>Fonctionne avec des bases de données existantes et actives :</b>pointer vers une base de données Postgres existante pour obtenir instantanément une API GraphQL prête à l'emploi
+										</li>									
+									</div>
+								</div>
+								<div class="feature-extended-body is-revealing">
+									
+										<div class="mockup-bg">
+
+										<ul>
+											<li><b>Effectuer des requêtes puissantes : </b>filtrage intégré, pagination, recherche de modèles, insertion en masse, mise à jour, suppression de mutations
+											</li>
+											<br>
+											<li><b>Temps réel :</b> convertir n'importe quelle requête GraphQL en une requête en direct
+											</li>
+											
+
+										</ul>
+								</div>
+								
+							</div>
+
+						</div>
+						<center><h1>Comment ça marche ?</h1></center>
+						<br>
+						<div class="mockup-container">	
+							<img class="device-mockup" src="dist/images/schema_hasura.png" alt="image">
+						</div>
+						<br>
+						<br>
+						<center><h1>Exemple d'utilisation</h1></center>
+						<center><p>Connecter une BDD existante</p></center>
+								<img class="device-mockup" src="dist/images/connect.png" alt="image">
+						<br>
+						<br>
+						<br>
+						<br>
+						<center><p>Créer une table</p></center>
+								<img style="width:400px" class="device-mockup" src="dist/images/create_database.png" alt="image">
+						<br>
+								<img style="width:600px" class="device-mockup" src="dist/images/create_2.png" alt="image">
+						<br>
+						<br>
+						<br>
+						<br>
+						<center><p>Utiliser query</p></center>
+						<img class="device-mockup" src="dist/images/query.png" alt="image">
+						<br>
+						<img style="width:600px" class="device-mockup" src="dist/images/query_2.png" alt="image">
+
+						<br>
+						<br>
+						<center><h1>Hasura VS Prisma</h1></center>
+						<p class="m-0"> Hasura et Prisma fournissent une API GraphQL sur Postgres. Cependant, il existe une différence significative.
+
+							Prisma en tant qu'API GraphQL sur votre base de données ne peut pas être utilisée directement par vos applications frontales.
+ 
+						</p>
+
+
+							<div class="feature-extended">
+								<img class="device-mockup" src="dist/images/prisma.png" alt="image">
+
+						
+								<br>	
+								<br>
+								
+							</div>
+							<p class="m-0"></p>
+							Hasura épargne le besoin d'écrire un backend CRUD et évolutif en temps réel sans interférer avec la façon dont vous écrivez votre logique métier.
+						</p>
+
+						<br>
+						<br>
+
+						<center><h1>Conclusion</h1></center>
+						<p class="m-0">
+							<center>
+								Hasura est un outil complet, il permet la manipulation de données pour les moins experimentés en SQL. C'est un outil qui permet un bon intermédiaire entre la partie technique et métier d'une entreprise. La facilité d'utilisation dû à son aspect graphique reflète le potentiel qu'a Hasura pour devenir connu de tous.
+							</center>
+						</p>
+
+					</div>
+
+					</div>	
+					
+
+					
+                </div>
+            </section>
+        </main>
+
+		<footer class="site-footer">
+			<div class="footer-particles-container">
+				<canvas id="footer-particles"></canvas>
+			</div>
+			<div class="site-footer-top">
+				<section class="cta section text-light">
+					<div class="container-sm">
+						<div class="cta-inner section-inner">
+							<div class="cta-header text-center">
+								<h2 class="section-title mt-0">Documentation</h2>
+								<p class="section-paragraph">Hasura possède une documentation complète, je vous laisse un lien pour la consulter</p>
+								<div class="cta-cta">
+									<a class="button button-primary button-wide-mobile" href="https://hasura.io/docs/latest/graphql/core/index.html">Documentation</a>
+								</div>
+							</div>
+						</div>
+				
+				</div>
+			</div>
+        </footer>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+</html>
